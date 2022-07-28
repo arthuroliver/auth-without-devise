@@ -1,4 +1,6 @@
 class DashboardsController < ApplicationController
+  require 'rest-client'
+
   before_action :authorize
 
   def index
@@ -11,8 +13,7 @@ class DashboardsController < ApplicationController
   private
 
   def geolocation_request
-    url = URI('http://ipinfo.io')
-    result = Net::HTTP.get(url)
+    result = RestClient.get('http://ipinfo.io')
     result = JSON.parse result.gsub('=>', ':')
   end
 end
