@@ -1,0 +1,24 @@
+<h1>Login</h1>
+
+<%= form_with(model: @user, url: '/login', method: 'new') do |f| %>
+  <% flash.each do |type, msg| %>
+    <div>
+      <%= msg %>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :email, "Email:", class: "col-md-4 control-label" %>
+    <div class="col-md-8">
+      <%= f.text_field :email, class: "form-control" %>
+    </div>
+  </div>
+  <div class="form-group">
+    <%= f.label :password, "Password:", class: "col-md-4 control-label" %>
+    <div class="col-md-8">
+      <%= f.password_field :password, class: "form-control" %>
+    </div>
+  </div>
+
+  <br><%= f.submit "Submit", class: "btn btn-default btn-primary" %>  
+<% end %>

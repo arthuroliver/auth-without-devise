@@ -1,0 +1,16 @@
+current directory: /home/arthur/www/studies/coffeebean/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+/home/arthur/.rbenv/versions/3.1.2/bin/ruby -I /home/arthur/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220728-6948-o2z22i.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+creating Makefile
+
+current directory: /home/arthur/www/studies/coffeebean/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= clean
+
+current directory: /home/arthur/www/studies/coffeebean/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\=
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: /home/arthur/www/studies/coffeebean/vendor/bundle/ruby/3.1.0/gems/strscan-3.0.4/ext/strscan
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20220728-6948-sc60hz

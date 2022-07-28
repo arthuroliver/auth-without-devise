@@ -1,0 +1,21 @@
+<h1>User's dashboard</h1>
+  <div class="col-md-8">
+  <%= "Name: " + current_user.name  %>
+  </div>
+  <div class="col-md-8">
+    <%= "Email: " + current_user.email  %>
+  </div>
+  <div class="col-md-8">
+    <%= "Your IP address is: #{@client_ip}" %>
+  </div>
+  <div class="col-md-8">
+    <%= "City: #{@client_city}" %>
+  </div>
+  <div class="col-md-8">
+    <%= "Region: #{@client_region}" %>
+  </div>
+  <div class="col-md-8">
+    <%= "Country: #{@client_country}" %>
+  </div>
+  <%= link_to "Logout", '/logout' %>
+</div>
